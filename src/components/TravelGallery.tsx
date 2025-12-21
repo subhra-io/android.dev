@@ -36,7 +36,7 @@ const travelMedia: TravelMedia[] = [
   {
     id: '1',
     type: 'image',
-    src: '/travel/placeholder-travel.svg',
+    src: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     title: 'Tech Hub Adventures',
     location: 'Hyderabad, Telangana',
     date: '2024-08-15',
@@ -47,7 +47,7 @@ const travelMedia: TravelMedia[] = [
   {
     id: '2',
     type: 'image',
-    src: '/travel/placeholder-travel.svg',
+    src: 'https://images.unsplash.com/photo-1596176530529-78163a4f7af2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     title: 'Garden City Vibes',
     location: 'Bengaluru, Karnataka',
     date: '2024-07-20',
@@ -58,7 +58,7 @@ const travelMedia: TravelMedia[] = [
   {
     id: '3',
     type: 'image',
-    src: '/travel/placeholder-travel.svg',
+    src: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     title: 'Temple City Heritage',
     location: 'Bhubaneswar, Odisha',
     date: '2024-06-10',
@@ -69,7 +69,7 @@ const travelMedia: TravelMedia[] = [
   {
     id: '4',
     type: 'image',
-    src: '/travel/placeholder-travel.svg',
+    src: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     title: 'Sacred Beach Town',
     location: 'Puri, Odisha',
     date: '2024-06-12',
@@ -80,7 +80,7 @@ const travelMedia: TravelMedia[] = [
   {
     id: '5',
     type: 'image',
-    src: '/travel/placeholder-travel.svg',
+    src: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80',
     title: 'Taj Mahal Wonder',
     location: 'Agra, Uttar Pradesh',
     date: '2024-05-18',
@@ -91,7 +91,7 @@ const travelMedia: TravelMedia[] = [
   {
     id: '6',
     type: 'image',
-    src: '/travel/placeholder-travel.svg',
+    src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     title: 'Tribal Heritage',
     location: 'Kalahandi, Odisha',
     date: '2024-04-25',
@@ -102,7 +102,7 @@ const travelMedia: TravelMedia[] = [
   {
     id: '7',
     type: 'image',
-    src: '/travel/placeholder-travel.svg',
+    src: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80',
     title: 'District Headquarters',
     location: 'Bhawanipatna, Odisha',
     date: '2024-04-26',
@@ -113,7 +113,7 @@ const travelMedia: TravelMedia[] = [
   {
     id: '8',
     type: 'image',
-    src: '/travel/placeholder-travel.svg',
+    src: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     title: 'Capital Chronicles',
     location: 'New Delhi, Delhi',
     date: '2024-03-15',
@@ -124,7 +124,7 @@ const travelMedia: TravelMedia[] = [
   {
     id: '9',
     type: 'image',
-    src: '/travel/placeholder-travel.svg',
+    src: 'https://images.unsplash.com/photo-1582650625119-3a31f8fa2699?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     title: 'Village Roots',
     location: 'Narasighapuram, Tamil Nadu',
     date: '2024-02-20',
@@ -135,7 +135,7 @@ const travelMedia: TravelMedia[] = [
   {
     id: '10',
     type: 'image',
-    src: '/travel/placeholder-travel.svg',
+    src: 'https://images.unsplash.com/photo-1582650625119-3a31f8fa2699?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     title: 'Shore Temple Wonders',
     location: 'Mahabalipuram, Tamil Nadu',
     date: '2024-02-22',
@@ -146,7 +146,7 @@ const travelMedia: TravelMedia[] = [
   {
     id: '11',
     type: 'image',
-    src: '/travel/placeholder-travel.svg',
+    src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     title: 'Hill Station Escape',
     location: 'Yelagiri Hills, Tamil Nadu',
     date: '2024-02-24',
@@ -157,7 +157,7 @@ const travelMedia: TravelMedia[] = [
   {
     id: '12',
     type: 'image',
-    src: '/travel/placeholder-travel.svg',
+    src: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80',
     title: 'Industrial Town',
     location: 'Ranipet, Tamil Nadu',
     date: '2024-02-25',
@@ -168,7 +168,7 @@ const travelMedia: TravelMedia[] = [
   {
     id: '13',
     type: 'image',
-    src: '/travel/placeholder-travel.svg',
+    src: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     title: 'Fort City Heritage',
     location: 'Vellore, Tamil Nadu',
     date: '2024-02-26',
@@ -179,7 +179,7 @@ const travelMedia: TravelMedia[] = [
   {
     id: '14',
     type: 'image',
-    src: '/travel/placeholder-travel.svg',
+    src: 'https://images.unsplash.com/photo-1582650625119-3a31f8fa2699?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     title: 'Silk City Charm',
     location: 'Berhampur, Odisha',
     date: '2024-01-15',

@@ -43,7 +43,7 @@ const travelPosts: TravelPost[] = [
     readTime: 8,
     views: 1250,
     likes: 89,
-    coverImage: '/travel/placeholder-travel.svg',
+    coverImage: 'https://images.unsplash.com/photo-1596176530529-78163a4f7af2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     tags: ['bengaluru', 'work', 'tech', 'city-life'],
     category: 'city',
     featured: true
@@ -58,7 +58,7 @@ const travelPosts: TravelPost[] = [
     readTime: 6,
     views: 1450,
     likes: 112,
-    coverImage: '/travel/placeholder-travel.svg',
+    coverImage: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80',
     tags: ['tajmahal', 'heritage', 'agra', 'wonder'],
     category: 'culture',
     featured: true
@@ -73,7 +73,7 @@ const travelPosts: TravelPost[] = [
     readTime: 7,
     views: 890,
     likes: 78,
-    coverImage: '/travel/placeholder-travel.svg',
+    coverImage: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     tags: ['bhubaneswar', 'temples', 'heritage', 'odisha'],
     category: 'culture',
     featured: false
@@ -88,7 +88,7 @@ const travelPosts: TravelPost[] = [
     readTime: 5,
     views: 980,
     likes: 67,
-    coverImage: '/travel/placeholder-travel.svg',
+    coverImage: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     tags: ['puri', 'beach', 'temple', 'spiritual'],
     category: 'culture',
     featured: false
@@ -103,7 +103,7 @@ const travelPosts: TravelPost[] = [
     readTime: 6,
     views: 1120,
     likes: 95,
-    coverImage: '/travel/placeholder-travel.svg',
+    coverImage: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     tags: ['hyderabad', 'tech', 'heritage', 'city'],
     category: 'city',
     featured: false
@@ -118,7 +118,7 @@ const travelPosts: TravelPost[] = [
     readTime: 8,
     views: 1350,
     likes: 103,
-    coverImage: '/travel/placeholder-travel.svg',
+    coverImage: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     tags: ['delhi', 'capital', 'monuments', 'heritage'],
     category: 'culture',
     featured: false
@@ -133,7 +133,7 @@ const travelPosts: TravelPost[] = [
     readTime: 9,
     views: 750,
     likes: 56,
-    coverImage: '/travel/placeholder-travel.svg',
+    coverImage: 'https://images.unsplash.com/photo-1582650625119-3a31f8fa2699?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     tags: ['tamilnadu', 'heritage', 'temples', 'unesco'],
     category: 'culture',
     featured: false
@@ -148,7 +148,7 @@ const travelPosts: TravelPost[] = [
     readTime: 7,
     views: 650,
     likes: 45,
-    coverImage: '/travel/placeholder-travel.svg',
+    coverImage: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     tags: ['kalahandi', 'tribal', 'culture', 'heritage'],
     category: 'culture',
     featured: false
