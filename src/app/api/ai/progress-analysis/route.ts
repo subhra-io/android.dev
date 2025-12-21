@@ -1,9 +1,10 @@
 import { NextResponse } from 'next/server'
 import OpenAI from 'openai'
 
-const openai = new OpenAI({
+// Initialize OpenAI only if API key is available
+const openai = process.env.OPENAI_API_KEY ? new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
-})
+}) : null
 
 interface ProgressData {
   dailyStats: {
@@ -61,7 +62,7 @@ export async function POST(request: Request) {
     
     progressData = requestProgressData
 
-    if (!process.env.OPENAI_API_KEY) {
+    if (!openai || !process.env.OPENAI_API_KEY) {
       return getFallbackAnalysis(progressData)
     }
 
