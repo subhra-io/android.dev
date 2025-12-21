@@ -35,92 +35,122 @@ interface TravelPost {
 const travelPosts: TravelPost[] = [
   {
     id: '1',
-    title: 'Paragliding Adventures in the Himalayas',
-    excerpt: 'An adrenaline-pumping experience soaring through the clouds above Manali with breathtaking mountain views.',
-    content: 'The moment I stepped off that cliff, everything changed. The rush of wind, the panoramic view of snow-capped peaks, and the feeling of absolute freedom - paragliding in Manali was truly life-changing...',
-    location: 'Manali, Himachal Pradesh',
-    date: '2024-02-20',
+    title: 'Working in India\'s Silicon Valley',
+    excerpt: 'My experience living and working in Bengaluru, from UIDAI office life to exploring the Garden City\'s vibrant culture.',
+    content: 'Bengaluru has been my home for work and growth. From the bustling tech corridors of Electronic City to the peaceful gardens of Lalbagh, this city offers the perfect blend of career opportunities and cultural richness...',
+    location: 'Bengaluru, Karnataka',
+    date: '2024-07-20',
     readTime: 8,
     views: 1250,
     likes: 89,
     coverImage: '/travel/placeholder-travel.svg',
-    tags: ['adventure', 'himalayas', 'paragliding', 'mountains'],
-    category: 'adventure',
+    tags: ['bengaluru', 'work', 'tech', 'city-life'],
+    category: 'city',
     featured: true
   },
   {
     id: '2',
-    title: 'Backwaters Bliss: A Kerala Houseboat Journey',
-    excerpt: 'Floating through the serene backwaters of Alleppey, discovering the peaceful side of Kerala.',
-    content: 'Waking up to the gentle lapping of water against the houseboat, surrounded by lush green paddy fields and coconut palms swaying in the breeze...',
-    location: 'Alleppey, Kerala',
-    date: '2024-01-10',
+    title: 'Taj Mahal: A Wonder Beyond Words',
+    excerpt: 'Standing before the magnificent Taj Mahal at sunrise - experiencing one of the world\'s greatest architectural marvels.',
+    content: 'No amount of photos can prepare you for the actual experience of seeing the Taj Mahal. The intricate marble work, the perfect symmetry, and the love story behind it all...',
+    location: 'Agra, Uttar Pradesh',
+    date: '2024-05-18',
     readTime: 6,
-    views: 980,
-    likes: 67,
+    views: 1450,
+    likes: 112,
     coverImage: '/travel/placeholder-travel.svg',
-    tags: ['backwaters', 'kerala', 'peaceful', 'nature'],
-    category: 'nature',
+    tags: ['tajmahal', 'heritage', 'agra', 'wonder'],
+    category: 'culture',
     featured: true
   },
   {
     id: '3',
-    title: 'Street Food Adventures in Mumbai',
-    excerpt: 'Exploring the incredible street food scene of Mumbai, from vada pav to kulfi.',
-    content: 'Mumbai\'s street food is not just about taste - it\'s about the experience, the chaos, the flavors that dance on your tongue...',
-    location: 'Mumbai, Maharashtra',
-    date: '2023-11-18',
-    readTime: 5,
-    views: 1450,
-    likes: 112,
-    coverImage: '/travel/placeholder-travel.svg',
-    tags: ['food', 'mumbai', 'street-food', 'culture'],
-    category: 'food',
-    featured: false
-  },
-  {
-    id: '4',
-    title: 'Royal Rajasthan: Palaces and Heritage',
-    excerpt: 'Stepping into the royal history of Udaipur, exploring magnificent palaces and rich cultural heritage.',
-    content: 'The City Palace of Udaipur stands as a testament to the grandeur of Rajputana architecture...',
-    location: 'Udaipur, Rajasthan',
-    date: '2023-12-05',
+    title: 'Temple City Chronicles',
+    excerpt: 'Exploring the ancient temples and rich cultural heritage of Bhubaneswar, Odisha\'s capital city.',
+    content: 'Bhubaneswar, known as the Temple City of India, is a treasure trove of ancient architecture and spiritual heritage...',
+    location: 'Bhubaneswar, Odisha',
+    date: '2024-06-10',
     readTime: 7,
     views: 890,
     likes: 78,
     coverImage: '/travel/placeholder-travel.svg',
-    tags: ['heritage', 'palace', 'rajasthan', 'architecture'],
+    tags: ['bhubaneswar', 'temples', 'heritage', 'odisha'],
+    category: 'culture',
+    featured: false
+  },
+  {
+    id: '4',
+    title: 'Sacred Shores of Puri',
+    excerpt: 'Spiritual vibes at Jagannath Temple and peaceful moments at Puri Beach - a perfect blend of devotion and relaxation.',
+    content: 'Puri offers a unique combination of spiritual energy and coastal tranquility. The famous Jagannath Temple draws millions of devotees...',
+    location: 'Puri, Odisha',
+    date: '2024-06-12',
+    readTime: 5,
+    views: 980,
+    likes: 67,
+    coverImage: '/travel/placeholder-travel.svg',
+    tags: ['puri', 'beach', 'temple', 'spiritual'],
     category: 'culture',
     featured: false
   },
   {
     id: '5',
-    title: 'Spiritual Journey in Rishikesh',
-    excerpt: 'Finding inner peace and adventure in the yoga capital of the world.',
-    content: 'Rishikesh offers the perfect blend of spirituality and adventure, where you can meditate by the Ganges in the morning and go river rafting in the afternoon...',
-    location: 'Rishikesh, Uttarakhand',
-    date: '2023-07-14',
-    readTime: 9,
+    title: 'Hyderabad: Where Tradition Meets Technology',
+    excerpt: 'Exploring the vibrant tech city of Hyderabad, from historic Charminar to modern HITEC City.',
+    content: 'Hyderabad perfectly embodies the blend of old and new India. From the bustling streets around Charminar to the gleaming tech towers of HITEC City...',
+    location: 'Hyderabad, Telangana',
+    date: '2024-08-15',
+    readTime: 6,
     views: 1120,
     likes: 95,
     coverImage: '/travel/placeholder-travel.svg',
-    tags: ['spiritual', 'yoga', 'rishikesh', 'ganges'],
-    category: 'culture',
+    tags: ['hyderabad', 'tech', 'heritage', 'city'],
+    category: 'city',
     featured: false
   },
   {
     id: '6',
-    title: 'Tea Gardens and Mountain Railways',
-    excerpt: 'Exploring the lush tea gardens of Darjeeling and riding the famous toy train.',
-    content: 'The mist-covered hills of Darjeeling, dotted with tea gardens as far as the eye can see...',
-    location: 'Darjeeling, West Bengal',
-    date: '2023-06-08',
-    readTime: 6,
+    title: 'Capital Chronicles: Delhi Diaries',
+    excerpt: 'Exploring the heart of India - from India Gate to Red Fort, every monument tells our nation\'s story.',
+    content: 'Delhi, the capital of India, is a living museum of our country\'s rich history and vibrant present...',
+    location: 'New Delhi, Delhi',
+    date: '2024-03-15',
+    readTime: 8,
+    views: 1350,
+    likes: 103,
+    coverImage: '/travel/placeholder-travel.svg',
+    tags: ['delhi', 'capital', 'monuments', 'heritage'],
+    category: 'culture',
+    featured: false
+  },
+  {
+    id: '7',
+    title: 'Tamil Nadu Heritage Trail',
+    excerpt: 'From ancient Shore Temples of Mahabalipuram to the serene hills of Yelagiri - Tamil Nadu\'s diverse beauty.',
+    content: 'Tamil Nadu offers an incredible diversity of experiences, from UNESCO World Heritage sites to peaceful hill stations...',
+    location: 'Mahabalipuram, Tamil Nadu',
+    date: '2024-02-22',
+    readTime: 9,
     views: 750,
     likes: 56,
     coverImage: '/travel/placeholder-travel.svg',
-    tags: ['tea', 'mountains', 'darjeeling', 'train'],
-    category: 'nature',
+    tags: ['tamilnadu', 'heritage', 'temples', 'unesco'],
+    category: 'culture',
+    featured: false
+  },
+  {
+    id: '8',
+    title: 'Discovering Tribal Heritage in Kalahandi',
+    excerpt: 'Exploring the rich tribal culture and natural beauty of Kalahandi district, Odisha.',
+    content: 'Kalahandi district offers a glimpse into India\'s rich tribal heritage and traditions that have been preserved for centuries...',
+    location: 'Kalahandi, Odisha',
+    date: '2024-04-25',
+    readTime: 7,
+    views: 650,
+    likes: 45,
+    coverImage: '/travel/placeholder-travel.svg',
+    tags: ['kalahandi', 'tribal', 'culture', 'heritage'],
+    category: 'culture',
     featured: false
   }
 ]
@@ -372,10 +402,23 @@ export default function TravelBlog() {
             <h2 className="section-title justify-center">
               Travel Stories
             </h2>
-            <p className="text-navy-300 max-w-2xl mx-auto">
-              Adventures, experiences, and stories from my travels across incredible destinations. 
+            <p className="text-navy-300 max-w-2xl mx-auto mb-8">
+              Adventures, experiences, and stories from my travels across incredible destinations in India. 
               Each journey teaches something new and creates memories that last a lifetime.
             </p>
+            
+            {/* Instagram Link */}
+            <div className="text-center mb-8">
+              <a
+                href="https://www.instagram.com/nikheeeeeell"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-green-400 hover:text-green-300 transition-colors"
+              >
+                <Camera className="w-4 h-4 mr-2" />
+                Follow my travel journey @nikheeeeeell
+              </a>
+            </div>
           </div>
 
           {/* Featured Posts */}

@@ -1,6 +1,6 @@
 'use client'
 
-import { Github, Linkedin, Twitter, Heart, ArrowUp } from 'lucide-react'
+import { Github, Linkedin, Heart, ArrowUp, Instagram } from 'lucide-react'
 
 const socialLinks = [
   {
@@ -14,9 +14,9 @@ const socialLinks = [
     icon: <Linkedin className="w-5 h-5" />
   },
   {
-    name: 'Twitter',
-    url: 'https://twitter.com/subrajitpandey',
-    icon: <Twitter className="w-5 h-5" />
+    name: 'Instagram',
+    url: 'https://www.instagram.com/nikheeeeeell',
+    icon: <Instagram className="w-5 h-5" />
   }
 ]
 

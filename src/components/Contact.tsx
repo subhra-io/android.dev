@@ -25,7 +25,7 @@ const socialLinks = [
   },
   {
     name: 'Instagram',
-    url: 'https://instagram.com/subrajitpandey',
+    url: 'https://www.instagram.com/nikheeeeeell',
     icon: <Instagram className="w-5 h-5" />,
     color: 'hover:text-pink-400'
   }

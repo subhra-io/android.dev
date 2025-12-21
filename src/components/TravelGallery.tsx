@@ -37,114 +37,155 @@ const travelMedia: TravelMedia[] = [
     id: '1',
     type: 'image',
     src: '/travel/placeholder-travel.svg',
-    title: 'Sunset at Goa Beach',
-    location: 'Goa, India',
-    date: '2024-03-15',
-    description: 'Amazing sunset view at Anjuna Beach. The colors were absolutely breathtaking!',
-    tags: ['beach', 'sunset', 'goa', 'nature'],
-    coordinates: { lat: 15.5937, lng: 73.7460 }
+    title: 'Tech Hub Adventures',
+    location: 'Hyderabad, Telangana',
+    date: '2024-08-15',
+    description: 'Exploring the vibrant tech city of Hyderabad, from Charminar to HITEC City. The perfect blend of tradition and innovation!',
+    tags: ['city', 'tech', 'hyderabad', 'culture'],
+    coordinates: { lat: 17.3850, lng: 78.4867 }
   },
   {
     id: '2',
-    type: 'video',
+    type: 'image',
     src: '/travel/placeholder-travel.svg',
-    thumbnail: '/travel/placeholder-travel.svg',
-    title: 'Adventure in Manali',
-    location: 'Manali, Himachal Pradesh',
-    date: '2024-02-20',
-    description: 'Paragliding adventure in the beautiful valleys of Manali. What an adrenaline rush!',
-    tags: ['adventure', 'mountains', 'paragliding', 'himachal'],
-    coordinates: { lat: 32.2396, lng: 77.1887 }
+    title: 'Garden City Vibes',
+    location: 'Bengaluru, Karnataka',
+    date: '2024-07-20',
+    description: 'Living and working in the Silicon Valley of India. From Lalbagh to Brigade Road, every corner has a story!',
+    tags: ['city', 'work', 'bengaluru', 'gardens'],
+    coordinates: { lat: 12.9716, lng: 77.5946 }
   },
   {
     id: '3',
     type: 'image',
     src: '/travel/placeholder-travel.svg',
-    title: 'Kerala Backwaters',
-    location: 'Alleppey, Kerala',
-    date: '2024-01-10',
-    description: 'Peaceful houseboat journey through the serene backwaters of Kerala.',
-    tags: ['backwaters', 'kerala', 'houseboat', 'peaceful'],
-    coordinates: { lat: 9.4981, lng: 76.3388 }
+    title: 'Temple City Heritage',
+    location: 'Bhubaneswar, Odisha',
+    date: '2024-06-10',
+    description: 'Discovering the ancient temples and rich cultural heritage of Bhubaneswar, the Temple City of India.',
+    tags: ['heritage', 'temples', 'bhubaneswar', 'culture'],
+    coordinates: { lat: 20.2961, lng: 85.8245 }
   },
   {
     id: '4',
     type: 'image',
     src: '/travel/placeholder-travel.svg',
-    title: 'Rajasthan Palace',
-    location: 'Udaipur, Rajasthan',
-    date: '2023-12-05',
-    description: 'The magnificent City Palace of Udaipur showcasing royal architecture.',
-    tags: ['palace', 'architecture', 'rajasthan', 'heritage'],
-    coordinates: { lat: 24.5854, lng: 73.6833 }
+    title: 'Sacred Beach Town',
+    location: 'Puri, Odisha',
+    date: '2024-06-12',
+    description: 'Spiritual vibes at the famous Jagannath Temple and peaceful moments at Puri Beach. A perfect blend of devotion and relaxation.',
+    tags: ['beach', 'spiritual', 'puri', 'temple'],
+    coordinates: { lat: 19.8135, lng: 85.8312 }
   },
   {
     id: '5',
-    type: 'video',
+    type: 'image',
     src: '/travel/placeholder-travel.svg',
-    thumbnail: '/travel/placeholder-travel.svg',
-    title: 'Mumbai City Life',
-    location: 'Mumbai, Maharashtra',
-    date: '2023-11-18',
-    description: 'Time-lapse of the bustling streets of Mumbai - the city that never sleeps!',
-    tags: ['city', 'timelapse', 'mumbai', 'urban'],
-    coordinates: { lat: 19.0760, lng: 72.8777 }
+    title: 'Taj Mahal Wonder',
+    location: 'Agra, Uttar Pradesh',
+    date: '2024-05-18',
+    description: 'Standing before the magnificent Taj Mahal at sunrise. No words can describe the beauty of this wonder of the world!',
+    tags: ['heritage', 'tajmahal', 'agra', 'wonder'],
+    coordinates: { lat: 27.1751, lng: 78.0421 }
   },
   {
     id: '6',
     type: 'image',
     src: '/travel/placeholder-travel.svg',
-    title: 'Ladakh Mountains',
-    location: 'Leh, Ladakh',
-    date: '2023-09-12',
-    description: 'Breathtaking mountain ranges of Ladakh with crystal clear blue skies.',
-    tags: ['mountains', 'ladakh', 'landscape', 'adventure'],
-    coordinates: { lat: 34.1526, lng: 77.5771 }
+    title: 'Tribal Heritage',
+    location: 'Kalahandi, Odisha',
+    date: '2024-04-25',
+    description: 'Exploring the rich tribal culture and natural beauty of Kalahandi district. Amazing local traditions and warm hospitality!',
+    tags: ['tribal', 'culture', 'kalahandi', 'nature'],
+    coordinates: { lat: 20.1333, lng: 83.1667 }
   },
   {
     id: '7',
     type: 'image',
     src: '/travel/placeholder-travel.svg',
-    title: 'Ancient Hampi Ruins',
-    location: 'Hampi, Karnataka',
-    date: '2023-08-25',
-    description: 'Exploring the ancient ruins of Hampi, a UNESCO World Heritage Site.',
-    tags: ['heritage', 'ruins', 'hampi', 'history'],
-    coordinates: { lat: 15.3350, lng: 76.4600 }
+    title: 'District Headquarters',
+    location: 'Bhawanipatna, Odisha',
+    date: '2024-04-26',
+    description: 'Visiting the administrative center of Kalahandi district. Learning about local governance and community development.',
+    tags: ['city', 'administrative', 'bhawanipatna', 'local'],
+    coordinates: { lat: 19.9067, lng: 83.1711 }
   },
   {
     id: '8',
-    type: 'video',
+    type: 'image',
     src: '/travel/placeholder-travel.svg',
-    thumbnail: '/travel/placeholder-travel.svg',
-    title: 'River Rafting in Rishikesh',
-    location: 'Rishikesh, Uttarakhand',
-    date: '2023-07-14',
-    description: 'Thrilling white water rafting experience in the holy city of Rishikesh.',
-    tags: ['rafting', 'adventure', 'rishikesh', 'river'],
-    coordinates: { lat: 30.0869, lng: 78.2676 }
+    title: 'Capital Chronicles',
+    location: 'New Delhi, Delhi',
+    date: '2024-03-15',
+    description: 'Exploring the heart of India - from India Gate to Red Fort, every monument tells the story of our nation!',
+    tags: ['capital', 'monuments', 'delhi', 'heritage'],
+    coordinates: { lat: 28.6139, lng: 77.2090 }
   },
   {
     id: '9',
     type: 'image',
     src: '/travel/placeholder-travel.svg',
-    title: 'Darjeeling Tea Gardens',
-    location: 'Darjeeling, West Bengal',
-    date: '2023-06-08',
-    description: 'Lush green tea gardens of Darjeeling with the Himalayas in the background.',
-    tags: ['tea', 'gardens', 'darjeeling', 'himalayas'],
-    coordinates: { lat: 27.0360, lng: 88.2627 }
+    title: 'Village Roots',
+    location: 'Narasighapuram, Tamil Nadu',
+    date: '2024-02-20',
+    description: 'Connecting with my roots in this beautiful Tamil Nadu village. Traditional South Indian culture and amazing hospitality!',
+    tags: ['village', 'roots', 'tamilnadu', 'tradition'],
+    coordinates: { lat: 11.5000, lng: 79.0000 }
   },
   {
     id: '10',
     type: 'image',
     src: '/travel/placeholder-travel.svg',
-    title: 'Andaman Coral Reefs',
-    location: 'Havelock Island, Andaman',
-    date: '2023-05-20',
-    description: 'Underwater photography of beautiful coral reefs in the crystal clear waters.',
-    tags: ['underwater', 'coral', 'andaman', 'diving'],
-    coordinates: { lat: 12.0067, lng: 92.9797 }
+    title: 'Shore Temple Wonders',
+    location: 'Mahabalipuram, Tamil Nadu',
+    date: '2024-02-22',
+    description: 'Ancient rock-cut temples by the sea! Mahabalipuram\'s UNESCO World Heritage sites are absolutely breathtaking.',
+    tags: ['heritage', 'temples', 'mahabalipuram', 'unesco'],
+    coordinates: { lat: 12.6269, lng: 80.1928 }
+  },
+  {
+    id: '11',
+    type: 'image',
+    src: '/travel/placeholder-travel.svg',
+    title: 'Hill Station Escape',
+    location: 'Yelagiri Hills, Tamil Nadu',
+    date: '2024-02-24',
+    description: 'Cool breeze and scenic views at Yelagiri Hills. Perfect weekend getaway from the city heat!',
+    tags: ['hills', 'nature', 'yelagiri', 'weekend'],
+    coordinates: { lat: 12.6167, lng: 78.6500 }
+  },
+  {
+    id: '12',
+    type: 'image',
+    src: '/travel/placeholder-travel.svg',
+    title: 'Industrial Town',
+    location: 'Ranipet, Tamil Nadu',
+    date: '2024-02-25',
+    description: 'Exploring the industrial landscape of Ranipet. Interesting mix of manufacturing and local culture.',
+    tags: ['industrial', 'town', 'ranipet', 'local'],
+    coordinates: { lat: 12.9249, lng: 79.3308 }
+  },
+  {
+    id: '13',
+    type: 'image',
+    src: '/travel/placeholder-travel.svg',
+    title: 'Fort City Heritage',
+    location: 'Vellore, Tamil Nadu',
+    date: '2024-02-26',
+    description: 'The magnificent Vellore Fort and its rich history. Amazing architecture and well-preserved heritage!',
+    tags: ['fort', 'heritage', 'vellore', 'history'],
+    coordinates: { lat: 12.9165, lng: 79.1325 }
+  },
+  {
+    id: '14',
+    type: 'image',
+    src: '/travel/placeholder-travel.svg',
+    title: 'Silk City Charm',
+    location: 'Berhampur, Odisha',
+    date: '2024-01-15',
+    description: 'Famous for its silk sarees and rich cultural heritage. Berhampur\'s traditional crafts are truly amazing!',
+    tags: ['silk', 'crafts', 'berhampur', 'tradition'],
+    coordinates: { lat: 19.3149, lng: 84.7941 }
   }
 ]
 
@@ -361,24 +402,37 @@ export default function TravelGallery() {
               Travel Gallery
             </h2>
             <p className="text-navy-300 max-w-2xl mx-auto mb-8">
-              Capturing memories from my adventures around incredible India. Each photo and video tells a story 
-              of exploration, culture, and the beautiful moments that make traveling so special.
+              Capturing memories from my adventures across incredible India. From tech hubs to ancient temples, 
+              hill stations to heritage sites - each photo tells a story of exploration and discovery.
             </p>
             
             {/* Stats */}
             <div className="flex justify-center space-x-8 mb-8">
               <div className="text-center">
-                <div className="text-2xl font-bold text-green-400">10+</div>
+                <div className="text-2xl font-bold text-green-400">14+</div>
                 <div className="text-navy-400 text-sm">Destinations</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-blue-400">50+</div>
+                <div className="text-2xl font-bold text-blue-400">100+</div>
                 <div className="text-navy-400 text-sm">Photos</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-purple-400">15+</div>
-                <div className="text-navy-400 text-sm">Videos</div>
+                <div className="text-2xl font-bold text-purple-400">8</div>
+                <div className="text-navy-400 text-sm">States Visited</div>
               </div>
+            </div>
+            
+            {/* Instagram Link */}
+            <div className="text-center mb-8">
+              <a
+                href="https://www.instagram.com/nikheeeeeell"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-green-400 hover:text-green-300 transition-colors"
+              >
+                <Camera className="w-4 h-4 mr-2" />
+                Follow my journey on Instagram @nikheeeeeell
+              </a>
             </div>
           </div>
 
