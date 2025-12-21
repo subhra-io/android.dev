@@ -39,12 +39,12 @@ export default function Navbar() {
       scrolled ? 'bg-navy-700/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
     }`}>
       <div className="container-custom">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-14 sm:h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <button
               onClick={() => scrollToSection('#hero')}
-              className="text-2xl font-bold text-green-400 font-mono hover:text-green-300 transition-colors"
+              className="text-xl sm:text-2xl font-bold text-green-400 font-mono hover:text-green-300 transition-colors"
             >
               SP
             </button>
@@ -52,22 +52,23 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="ml-10 flex items-baseline space-x-6 lg:space-x-8">
               {navItems.map((item, index) => (
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="nav-link font-mono text-sm"
+                  className="nav-link font-mono text-xs lg:text-sm"
                 >
                   <span className="text-green-400 text-xs mr-1">0{index + 1}.</span>
-                  {item.name}
+                  <span className="hidden lg:inline">{item.name}</span>
+                  <span className="lg:hidden">{item.name.split(' ')[0]}</span>
                 </button>
               ))}
               <a
                 href="/resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary ml-4"
+                className="btn-primary ml-4 text-xs lg:text-sm px-4 lg:px-6 py-2 lg:py-3"
               >
                 Resume
               </a>
@@ -78,9 +79,9 @@ export default function Navbar() {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-navy-200 hover:text-green-400 transition-colors"
+              className="text-navy-200 hover:text-green-400 transition-colors p-2"
             >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
+              {isOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
           </div>
         </div>
@@ -88,7 +89,7 @@ export default function Navbar() {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-navy-600 rounded-lg mt-2">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-navy-600 rounded-lg mt-2 mx-4 sm:mx-0">
               {navItems.map((item, index) => (
                 <button
                   key={item.name}
@@ -104,7 +105,7 @@ export default function Navbar() {
                   href="/resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-primary w-full justify-center"
+                  className="btn-primary w-full justify-center text-sm"
                 >
                   Resume
                 </a>

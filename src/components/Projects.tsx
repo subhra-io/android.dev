@@ -92,24 +92,24 @@ function ProjectCard({ project, featured = false }: ProjectCardProps) {
     return (
       <div
         ref={ref}
-        className={`grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-20 transition-all duration-1000 ${
+        className={`grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center mb-16 lg:mb-20 transition-all duration-1000 ${
           inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}
       >
         <div className="lg:col-span-7 order-2 lg:order-1">
           <div className="relative">
-            <p className="text-green-400 font-mono text-sm mb-2">Featured Project</p>
-            <h3 className="text-2xl lg:text-3xl font-bold text-navy-100 mb-4">
+            <p className="text-green-400 font-mono text-xs sm:text-sm mb-2">Featured Project</p>
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-navy-100 mb-3 sm:mb-4">
               {project.title}
             </h3>
-            <div className="bg-navy-600 p-6 rounded-lg shadow-lg relative z-10">
-              <p className="text-navy-200 leading-relaxed mb-4">
+            <div className="bg-navy-600 p-4 sm:p-6 rounded-lg shadow-lg relative z-10">
+              <p className="text-navy-200 leading-relaxed mb-3 sm:mb-4 text-sm sm:text-base">
                 {project.longDescription || project.description}
               </p>
               {(project.status || project.duration) && (
-                <div className="flex flex-wrap gap-4 text-sm">
+                <div className="flex flex-wrap gap-2 sm:gap-4 text-sm">
                   {project.status && (
-                    <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
+                    <span className={`px-2 sm:px-3 py-1 rounded-full text-xs font-semibold ${
                       project.status === 'Ongoing' 
                         ? 'bg-blue-400/20 text-blue-400' 
                         : 'bg-green-400/20 text-green-400'
@@ -118,21 +118,21 @@ function ProjectCard({ project, featured = false }: ProjectCardProps) {
                     </span>
                   )}
                   {project.duration && (
-                    <span className="text-navy-400">
+                    <span className="text-navy-400 text-xs sm:text-sm">
                       {project.duration}
                     </span>
                   )}
                 </div>
               )}
             </div>
-            <div className="flex flex-wrap gap-2 mt-6 mb-6">
+            <div className="flex flex-wrap gap-1.5 sm:gap-2 mt-4 sm:mt-6 mb-4 sm:mb-6">
               {project.technologies.map((tech) => (
-                <span key={tech} className="skill-tag text-xs">
+                <span key={tech} className="px-2 sm:px-3 py-1 bg-navy-600 text-navy-200 rounded-full text-xs font-mono">
                   {tech}
                 </span>
               ))}
             </div>
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-3 sm:space-x-4">
               {project.githubUrl && (
                 <a
                   href={project.githubUrl}
@@ -141,7 +141,7 @@ function ProjectCard({ project, featured = false }: ProjectCardProps) {
                   className="text-navy-300 hover:text-green-400 transition-colors"
                   aria-label="GitHub Repository"
                 >
-                  <Github className="w-5 h-5" />
+                  <Github className="w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
               )}
               {project.liveUrl && (
@@ -152,18 +152,18 @@ function ProjectCard({ project, featured = false }: ProjectCardProps) {
                   className="text-navy-300 hover:text-green-400 transition-colors"
                   aria-label="Live Demo"
                 >
-                  <ExternalLink className="w-5 h-5" />
+                  <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
               )}
               {project.stars && (
-                <div className="flex items-center text-navy-400 text-sm">
-                  <Star className="w-4 h-4 mr-1" />
+                <div className="flex items-center text-navy-400 text-xs sm:text-sm">
+                  <Star className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
                   {project.stars}
                 </div>
               )}
               {project.forks && (
-                <div className="flex items-center text-navy-400 text-sm">
-                  <GitFork className="w-4 h-4 mr-1" />
+                <div className="flex items-center text-navy-400 text-xs sm:text-sm">
+                  <GitFork className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
                   {project.forks}
                 </div>
               )}
@@ -180,7 +180,7 @@ function ProjectCard({ project, featured = false }: ProjectCardProps) {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               ) : (
-                <div className="text-green-400 text-6xl">
+                <div className="text-green-400 text-4xl sm:text-6xl">
                   <Folder />
                 </div>
               )}
@@ -199,11 +199,11 @@ function ProjectCard({ project, featured = false }: ProjectCardProps) {
         inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}
     >
-      <div className="flex justify-between items-start mb-6">
-        <div className="text-green-400 text-4xl">
+      <div className="flex justify-between items-start mb-4 sm:mb-6">
+        <div className="text-green-400 text-3xl sm:text-4xl">
           <Folder />
         </div>
-        <div className="flex space-x-3">
+        <div className="flex space-x-2 sm:space-x-3">
           {project.githubUrl && (
             <a
               href={project.githubUrl}
@@ -212,7 +212,7 @@ function ProjectCard({ project, featured = false }: ProjectCardProps) {
               className="text-navy-300 hover:text-green-400 transition-colors"
               aria-label="GitHub Repository"
             >
-              <Github className="w-5 h-5" />
+              <Github className="w-4 h-4 sm:w-5 sm:h-5" />
             </a>
           )}
           {project.liveUrl && (
@@ -223,39 +223,39 @@ function ProjectCard({ project, featured = false }: ProjectCardProps) {
               className="text-navy-300 hover:text-green-400 transition-colors"
               aria-label="Live Demo"
             >
-              <ExternalLink className="w-5 h-5" />
+              <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5" />
             </a>
           )}
         </div>
       </div>
       
-      <h3 className="text-xl font-semibold text-navy-100 mb-3 group-hover:text-green-400 transition-colors">
+      <h3 className="text-lg sm:text-xl font-semibold text-navy-100 mb-2 sm:mb-3 group-hover:text-green-400 transition-colors">
         {project.title}
       </h3>
       
-      <p className="text-navy-300 text-sm leading-relaxed mb-6 flex-grow">
+      <p className="text-navy-300 text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6 flex-grow">
         {project.description}
       </p>
       
-      <div className="flex flex-wrap gap-2 mb-4">
+      <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4">
         {project.technologies.slice(0, 4).map((tech) => (
-          <span key={tech} className="skill-tag text-xs">
+          <span key={tech} className="px-2 sm:px-3 py-1 bg-navy-600 text-navy-200 rounded-full text-xs font-mono">
             {tech}
           </span>
         ))}
       </div>
 
       {(project.stars || project.forks) && (
-        <div className="flex items-center space-x-4 text-navy-400 text-sm">
+        <div className="flex items-center space-x-3 sm:space-x-4 text-navy-400 text-xs sm:text-sm">
           {project.stars && (
             <div className="flex items-center">
-              <Star className="w-4 h-4 mr-1" />
+              <Star className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
               {project.stars}
             </div>
           )}
           {project.forks && (
             <div className="flex items-center">
-              <GitFork className="w-4 h-4 mr-1" />
+              <GitFork className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
               {project.forks}
             </div>
           )}
@@ -293,16 +293,16 @@ export default function Projects() {
           </div>
 
           {/* Other Projects */}
-          <div className="text-center mb-12">
-            <h3 className="text-2xl font-semibold text-navy-100 mb-8">Other Noteworthy Projects</h3>
+          <div className="text-center mb-8 sm:mb-12">
+            <h3 className="text-xl sm:text-2xl font-semibold text-navy-100 mb-6 sm:mb-8">Other Noteworthy Projects</h3>
             
             {/* Category Filter */}
-            <div className="flex justify-center space-x-4 mb-8">
+            <div className="flex justify-center space-x-2 sm:space-x-4 mb-6 sm:mb-8">
               {categories.map((category) => (
                 <button
                   key={category}
                   onClick={() => setActiveCategory(category)}
-                  className={`px-4 py-2 rounded-full font-mono text-sm transition-all duration-300 ${
+                  className={`px-3 sm:px-4 py-2 rounded-full font-mono text-xs sm:text-sm transition-all duration-300 ${
                     activeCategory === category
                       ? 'bg-green-400/20 text-green-400 border border-green-400'
                       : 'text-navy-300 hover:text-green-400 border border-navy-500 hover:border-green-400/50'
@@ -314,7 +314,7 @@ export default function Projects() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {filteredOtherProjects.map((project, index) => (
               <div key={project.id} style={{ animationDelay: `${index * 100}ms` }}>
                 <ProjectCard project={project} />
@@ -323,12 +323,12 @@ export default function Projects() {
           </div>
 
           {/* GitHub CTA */}
-          <div className="text-center mt-16">
+          <div className="text-center mt-12 sm:mt-16">
             <a
               href="https://github.com/subhra-io"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary"
+              className="btn-primary text-sm sm:text-base"
             >
               View More on GitHub
             </a>
