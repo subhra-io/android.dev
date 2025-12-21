@@ -27,50 +27,55 @@ function BlogPost({ post, index }: BlogPostProps) {
       style={{ animationDelay: `${index * 150}ms` }}
     >
       {post.thumbnail && (
-        <div className="mb-6 overflow-hidden rounded-lg">
+        <div className="mb-4 sm:mb-6 overflow-hidden rounded-lg">
           <img
             src={post.thumbnail}
             alt={post.title}
-            className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+            className="w-full h-40 sm:h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+            onError={(e) => {
+              // Fallback to a default image if the thumbnail fails to load
+              const target = e.target as HTMLImageElement
+              target.src = 'https://miro.medium.com/v2/resize:fit:1400/1*y6C4nSvy2Woe0m7bWEn4BA.png'
+            }}
           />
         </div>
       )}
       
-      <div className="flex items-center text-navy-400 text-sm mb-3 space-x-4">
+      <div className="flex items-center text-navy-400 text-xs sm:text-sm mb-2 sm:mb-3 space-x-3 sm:space-x-4">
         <div className="flex items-center">
-          <Calendar className="w-4 h-4 mr-1" />
+          <Calendar className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
           {format(new Date(post.published_at), 'MMM dd, yyyy')}
         </div>
         <div className="flex items-center">
-          <Clock className="w-4 h-4 mr-1" />
+          <Clock className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
           {post.reading_time} min read
         </div>
       </div>
       
-      <h3 className="text-xl font-semibold text-navy-100 mb-3 group-hover:text-green-400 transition-colors line-clamp-2">
+      <h3 className="text-lg sm:text-xl font-semibold text-navy-100 mb-2 sm:mb-3 group-hover:text-green-400 transition-colors line-clamp-2">
         {post.title}
       </h3>
       
-      <p className="text-navy-300 text-sm leading-relaxed mb-6 line-clamp-3">
+      <p className="text-navy-300 text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6 line-clamp-3">
         {post.subtitle}
       </p>
       
-      <div className="flex flex-wrap gap-2 mb-6">
+      <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4 sm:mb-6">
         {post.tags.slice(0, 3).map((tag: string) => (
-          <span key={tag} className="skill-tag text-xs">
+          <span key={tag} className="px-2 py-1 bg-navy-600 text-navy-200 rounded-full text-xs font-mono">
             {tag}
           </span>
         ))}
       </div>
 
       <div className="flex items-center justify-between">
-        <div className="flex items-center space-x-4 text-navy-400 text-sm">
+        <div className="flex items-center space-x-3 sm:space-x-4 text-navy-400 text-xs sm:text-sm">
           <div className="flex items-center">
-            <Heart className="w-4 h-4 mr-1" />
+            <Heart className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
             {post.claps}
           </div>
           <div className="flex items-center">
-            <MessageCircle className="w-4 h-4 mr-1" />
+            <MessageCircle className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
             {post.responses}
           </div>
         </div>
@@ -79,10 +84,10 @@ function BlogPost({ post, index }: BlogPostProps) {
           href={post.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-green-400 hover:text-green-300 transition-colors inline-flex items-center text-sm font-medium"
+          className="text-green-400 hover:text-green-300 transition-colors inline-flex items-center text-xs sm:text-sm font-medium"
         >
           Read More
-          <ExternalLink className="w-4 h-4 ml-1" />
+          <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4 ml-1" />
         </a>
       </div>
     </article>
@@ -92,26 +97,26 @@ function BlogPost({ post, index }: BlogPostProps) {
 function BlogSkeleton() {
   return (
     <div className="project-card animate-pulse">
-      <div className="w-full h-48 bg-navy-500 rounded-lg mb-6"></div>
-      <div className="flex space-x-4 mb-3">
-        <div className="h-4 bg-navy-500 rounded w-20"></div>
-        <div className="h-4 bg-navy-500 rounded w-16"></div>
+      <div className="w-full h-40 sm:h-48 bg-navy-500 rounded-lg mb-4 sm:mb-6"></div>
+      <div className="flex space-x-3 sm:space-x-4 mb-2 sm:mb-3">
+        <div className="h-3 sm:h-4 bg-navy-500 rounded w-16 sm:w-20"></div>
+        <div className="h-3 sm:h-4 bg-navy-500 rounded w-12 sm:w-16"></div>
       </div>
-      <div className="h-6 bg-navy-500 rounded mb-3"></div>
-      <div className="space-y-2 mb-6">
-        <div className="h-4 bg-navy-500 rounded"></div>
-        <div className="h-4 bg-navy-500 rounded w-3/4"></div>
+      <div className="h-5 sm:h-6 bg-navy-500 rounded mb-2 sm:mb-3"></div>
+      <div className="space-y-2 mb-4 sm:mb-6">
+        <div className="h-3 sm:h-4 bg-navy-500 rounded"></div>
+        <div className="h-3 sm:h-4 bg-navy-500 rounded w-3/4"></div>
       </div>
-      <div className="flex space-x-2 mb-6">
-        <div className="h-6 bg-navy-500 rounded-full w-16"></div>
-        <div className="h-6 bg-navy-500 rounded-full w-20"></div>
+      <div className="flex space-x-2 mb-4 sm:mb-6">
+        <div className="h-5 sm:h-6 bg-navy-500 rounded-full w-12 sm:w-16"></div>
+        <div className="h-5 sm:h-6 bg-navy-500 rounded-full w-16 sm:w-20"></div>
       </div>
       <div className="flex justify-between">
-        <div className="flex space-x-4">
-          <div className="h-4 bg-navy-500 rounded w-12"></div>
-          <div className="h-4 bg-navy-500 rounded w-8"></div>
+        <div className="flex space-x-3 sm:space-x-4">
+          <div className="h-3 sm:h-4 bg-navy-500 rounded w-8 sm:w-12"></div>
+          <div className="h-3 sm:h-4 bg-navy-500 rounded w-6 sm:w-8"></div>
         </div>
-        <div className="h-4 bg-navy-500 rounded w-20"></div>
+        <div className="h-3 sm:h-4 bg-navy-500 rounded w-16 sm:w-20"></div>
       </div>
     </div>
   )
@@ -137,7 +142,7 @@ export default function Blog() {
           
           <div className="text-center mb-12">
             <p className="text-navy-300 max-w-2xl mx-auto">
-              I write about web development, programming best practices, and my journey as a software developer. 
+              I write about Android development, mobile app architecture, government technology, and my journey as a software developer. 
               Here are some of my recent articles from Medium.
             </p>
           </div>
@@ -146,7 +151,7 @@ export default function Blog() {
             <div className="text-center py-12">
               <p className="text-navy-400">Unable to load blog posts at the moment.</p>
               <a
-                href="https://medium.com/@subrajitpandey"
+                href="https://medium.com/@subhrajeetpandey2001"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary mt-4"
@@ -157,14 +162,14 @@ export default function Blog() {
           )}
 
           {isLoading ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {[...Array(6)].map((_, index) => (
                 <BlogSkeleton key={index} />
               ))}
             </div>
           ) : posts.length > 0 ? (
             <>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 {posts.map((post: any, index: number) => (
                   <BlogPost key={post.id} post={post} index={index} />
                 ))}
@@ -172,7 +177,7 @@ export default function Blog() {
               
               <div className="text-center mt-12">
                 <a
-                  href="https://medium.com/@subrajitpandey"
+                  href="https://medium.com/@subhrajeetpandey2001"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary"
@@ -187,7 +192,7 @@ export default function Blog() {
                 I'm working on some exciting articles! Check back soon or visit my Medium profile.
               </p>
               <a
-                href="https://medium.com/@subrajitpandey"
+                href="https://medium.com/@subhrajeetpandey2001"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"
@@ -203,7 +208,7 @@ export default function Blog() {
               Stay Updated
             </h3>
             <p className="text-navy-300 mb-6 max-w-md mx-auto">
-              Get notified when I publish new articles about web development and programming.
+              Get notified when I publish new articles about Android development, mobile architecture, and programming.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <input
