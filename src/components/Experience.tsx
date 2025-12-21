@@ -33,6 +33,30 @@ const experiences = [
     companyUrl: 'https://uidai.gov.in',
     achievements: [
       {
+        type: 'app',
+        title: 'AadhaarFaceRD - Face Authentication App',
+        description:
+          'Developed a headless face authentication application for government services like Jeevan Pramaan and eKYC, enabling secure biometric verification.',
+        event: 'Google Play Store',
+        date: '2024',
+        certificate: null,
+        playStoreUrl: 'https://play.google.com/store/apps/details?id=in.gov.uidai.facerd',
+        downloads: '40M+',
+        rating: '3.6'
+      },
+      {
+        type: 'app',
+        title: 'Aadhaar - Digital Identity Platform',
+        description:
+          'Contributed to next-generation digital identity platform for Bharat, reimagining how residents engage with their identity with enhanced control and privacy.',
+        event: 'Google Play Store',
+        date: '2024',
+        certificate: null,
+        playStoreUrl: 'https://play.google.com/store/apps/details?id=in.gov.uidai.pehchaan',
+        downloads: '10M+',
+        rating: '4.2'
+      },
+      {
         type: 'award',
         title: 'International Innovation Award 2024',
         description:
@@ -43,20 +67,8 @@ const experiences = [
         playStoreUrl: null,
         downloads: null,
         rating: null
-      },
-      {
-        type: 'award',
-        title: 'Prime Minister Award',
-        description:
-          'Recognized for outstanding contribution to cross-platform mobile application development using Kotlin Multiplatform and modern Android architecture.',
-        event: 'UIDAI Internal Recognition Program',
-        date: '2024',
-        certificate: null,
-        playStoreUrl: null,
-        downloads: null,
-        rating: null
       }
-    ],
+    ]
   },
   {
     id: 'nextlearn',
@@ -200,79 +212,80 @@ export default function Experience() {
         <div className={`transition-all duration-1000 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h2 className="section-title">Where I've Worked</h2>
           
-          <div className="flex flex-col lg:flex-row gap-8">
+          <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
             {/* Tab buttons */}
-            <div className="flex lg:flex-col overflow-x-auto lg:overflow-x-visible">
+            <div className="flex lg:flex-col overflow-x-auto lg:overflow-x-visible scrollbar-hide">
               <div className="flex lg:flex-col border-b-2 lg:border-b-0 lg:border-l-2 border-navy-500 min-w-max lg:min-w-0">
-                {experiences.map((exp, index) => (
+                {experiences.map((exp) => (
                   <button
                     key={exp.id}
                     onClick={() => setActiveTab(exp.id)}
-                    className={`px-6 py-4 text-left font-mono text-sm whitespace-nowrap lg:whitespace-normal transition-all duration-300 border-b-2 lg:border-b-0 lg:border-l-2 ${
+                    className={`px-4 sm:px-6 py-3 sm:py-4 text-left font-mono text-xs sm:text-sm whitespace-nowrap lg:whitespace-normal transition-all duration-300 border-b-2 lg:border-b-0 lg:border-l-2 ${
                       activeTab === exp.id
                         ? 'text-green-400 border-green-400 bg-green-400/10'
                         : 'text-navy-300 border-transparent hover:text-green-400 hover:bg-green-400/5'
                     }`}
                   >
-                    {exp.company}
+                    <span className="hidden sm:inline">{exp.company}</span>
+                    <span className="sm:hidden">{exp.company.split(' ')[0]}</span>
                   </button>
                 ))}
               </div>
             </div>
 
             {/* Content */}
-            <div className="flex-1 min-h-[400px]">
-              <div className="space-y-6">
+            <div className="flex-1 min-h-[350px] sm:min-h-[400px]">
+              <div className="space-y-4 sm:space-y-6">
                 <div>
-                  <h3 className="text-2xl font-semibold text-navy-100 flex items-center gap-2">
-                    {activeExperience.position}
-                    <span className="text-green-400">@</span>
+                  <h3 className="text-xl sm:text-2xl font-semibold text-navy-100 flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
+                    <span>{activeExperience.position}</span>
+                    <span className="text-green-400 text-base sm:text-2xl">@</span>
                     {activeExperience.companyUrl ? (
                       <a
                         href={activeExperience.companyUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-green-400 hover:underline inline-flex items-center gap-1"
+                        className="text-green-400 hover:underline inline-flex items-center gap-1 text-base sm:text-2xl"
                       >
                         {activeExperience.company}
-                        <ExternalLink className="w-4 h-4" />
+                        <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4" />
                       </a>
                     ) : (
-                      <span className="text-green-400">{activeExperience.company}</span>
+                      <span className="text-green-400 text-base sm:text-2xl">{activeExperience.company}</span>
                     )}
                   </h3>
                   
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-2 mt-2 text-navy-300 font-mono text-sm">
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-2 mt-2 text-navy-300 font-mono text-xs sm:text-sm">
                     <div className="flex items-center gap-1">
-                      <Calendar className="w-4 h-4" />
-                      {activeExperience.startDate} - {activeExperience.endDate}
+                      <Calendar className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
+                      <span>{activeExperience.startDate} - {activeExperience.endDate}</span>
                     </div>
                     <div className="flex items-center gap-1">
-                      <MapPin className="w-4 h-4" />
-                      {activeExperience.location}
+                      <MapPin className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
+                      <span>{activeExperience.location}</span>
                     </div>
                   </div>
                 </div>
 
-                <ul className="space-y-3">
+                <ul className="space-y-2 sm:space-y-3">
                   {activeExperience.description.map((item, index) => (
                     <li
                       key={index}
-                      className="flex items-start text-navy-300 leading-relaxed"
+                      className="flex items-start text-navy-300 leading-relaxed text-sm sm:text-base"
                     >
-                      <span className="text-green-400 mr-3 mt-2 text-xs">▹</span>
+                      <span className="text-green-400 mr-2 sm:mr-3 mt-1.5 sm:mt-2 text-xs flex-shrink-0">▹</span>
                       <span>{item}</span>
                     </li>
                   ))}
                 </ul>
 
                 <div>
-                  <h4 className="text-navy-100 font-semibold mb-3">Technologies used:</h4>
-                  <div className="flex flex-wrap gap-2">
+                  <h4 className="text-navy-100 font-semibold mb-2 sm:mb-3 text-sm sm:text-base">Technologies used:</h4>
+                  <div className="flex flex-wrap gap-1.5 sm:gap-2">
                     {activeExperience.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="skill-tag"
+                        className="px-2 sm:px-3 py-1 bg-navy-600 text-navy-200 rounded-full text-xs sm:text-sm font-mono"
                       >
                         {tech}
                       </span>
@@ -282,82 +295,82 @@ export default function Experience() {
 
                 {/* Achievements Section */}
                 {activeExperience.achievements && activeExperience.achievements.length > 0 && (
-                  <div className="mt-8 pt-6 border-t border-navy-600">
-                    <h4 className="text-navy-100 font-semibold mb-4 flex items-center">
-                      <Trophy className="w-5 h-5 mr-2 text-yellow-400" />
+                  <div className="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-navy-600">
+                    <h4 className="text-navy-100 font-semibold mb-3 sm:mb-4 flex items-center text-sm sm:text-base">
+                      <Trophy className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-yellow-400 flex-shrink-0" />
                       Key Achievements
                     </h4>
-                    <div className="space-y-4">
+                    <div className="space-y-3 sm:space-y-4">
                       {activeExperience.achievements.map((achievement) => (
                         <div key={achievement.title} className="achievement-card">
                           {achievement.type === 'app' ? (
-                            <div className="flex items-start space-x-4 p-4 bg-navy-600/30 rounded-lg border border-navy-500">
+                            <div className="flex items-start space-x-3 sm:space-x-4 p-3 sm:p-4 bg-navy-600/30 rounded-lg border border-navy-500">
                               <div className="flex-shrink-0">
-                                <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-blue-400 rounded-lg flex items-center justify-center">
-                                  <Smartphone className="w-6 h-6 text-white" />
+                                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-green-400 to-blue-400 rounded-lg flex items-center justify-center">
+                                  <Smartphone className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                                 </div>
                               </div>
                               <div className="flex-1 min-w-0">
-                                <div className="flex items-center justify-between mb-2">
-                                  <h5 className="text-navy-100 font-semibold">{achievement.title}</h5>
+                                <div className="flex items-start justify-between mb-2">
+                                  <h5 className="text-navy-100 font-semibold text-sm sm:text-base pr-2">{achievement.title}</h5>
                                   {achievement.playStoreUrl && (
                                     <a
                                       href={achievement.playStoreUrl}
                                       target="_blank"
                                       rel="noopener noreferrer"
-                                      className="text-green-400 hover:text-green-300 transition-colors"
+                                      className="text-green-400 hover:text-green-300 transition-colors flex-shrink-0"
                                       title="View on Play Store"
                                     >
-                                      <ExternalLink className="w-4 h-4" />
+                                      <ExternalLink className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                                     </a>
                                   )}
                                 </div>
-                                <p className="text-navy-300 text-sm mb-3">{achievement.description}</p>
+                                <p className="text-navy-300 text-xs sm:text-sm mb-2 sm:mb-3 leading-relaxed">{achievement.description}</p>
                                 {achievement.downloads && achievement.rating && (
-                                  <div className="flex items-center space-x-4 text-xs text-navy-400">
+                                  <div className="flex items-center space-x-3 sm:space-x-4 text-xs text-navy-400">
                                     <div className="flex items-center">
-                                      <Download className="w-3 h-3 mr-1" />
-                                      {achievement.downloads} downloads
+                                      <Download className="w-3 h-3 mr-1 flex-shrink-0" />
+                                      <span className="truncate">{achievement.downloads} downloads</span>
                                     </div>
                                     <div className="flex items-center">
-                                      <Star className="w-3 h-3 mr-1 text-yellow-400" />
-                                      {achievement.rating} rating
+                                      <Star className="w-3 h-3 mr-1 text-yellow-400 flex-shrink-0" />
+                                      <span>{achievement.rating} rating</span>
                                     </div>
                                   </div>
                                 )}
                               </div>
                             </div>
                           ) : (
-                            <div className="flex items-start space-x-4 p-4 bg-gradient-to-r from-yellow-400/10 to-orange-400/10 rounded-lg border border-yellow-400/20">
+                            <div className="flex items-start space-x-3 sm:space-x-4 p-3 sm:p-4 bg-gradient-to-r from-yellow-400/10 to-orange-400/10 rounded-lg border border-yellow-400/20">
                               <div className="flex-shrink-0">
-                                <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-400 rounded-lg flex items-center justify-center">
-                                  <Award className="w-6 h-6 text-white" />
+                                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-yellow-400 to-orange-400 rounded-lg flex items-center justify-center">
+                                  <Award className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                                 </div>
                               </div>
                               <div className="flex-1 min-w-0">
-                                <div className="flex items-center justify-between mb-2">
-                                  <h5 className="text-navy-100 font-semibold">{achievement.title}</h5>
+                                <div className="flex items-start justify-between mb-2">
+                                  <h5 className="text-navy-100 font-semibold text-sm sm:text-base pr-2">{achievement.title}</h5>
                                   {achievement.certificate && (
                                     <a
                                       href={achievement.certificate}
                                       target="_blank"
                                       rel="noopener noreferrer"
-                                      className="text-yellow-400 hover:text-yellow-300 transition-colors"
+                                      className="text-yellow-400 hover:text-yellow-300 transition-colors flex-shrink-0"
                                       title="View Certificate"
                                     >
-                                      <ExternalLink className="w-4 h-4" />
+                                      <ExternalLink className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                                     </a>
                                   )}
                                 </div>
-                                <p className="text-navy-300 text-sm mb-2">{achievement.description}</p>
-                                <div className="flex items-center space-x-4 text-xs text-navy-400">
+                                <p className="text-navy-300 text-xs sm:text-sm mb-2 leading-relaxed">{achievement.description}</p>
+                                <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:space-x-4 text-xs text-navy-400">
                                   <div className="flex items-center">
-                                    <Users className="w-3 h-3 mr-1" />
-                                    {achievement.event}
+                                    <Users className="w-3 h-3 mr-1 flex-shrink-0" />
+                                    <span className="truncate">{achievement.event}</span>
                                   </div>
                                   <div className="flex items-center">
-                                    <Calendar className="w-3 h-3 mr-1" />
-                                    {achievement.date}
+                                    <Calendar className="w-3 h-3 mr-1 flex-shrink-0" />
+                                    <span>{achievement.date}</span>
                                   </div>
                                 </div>
                               </div>
