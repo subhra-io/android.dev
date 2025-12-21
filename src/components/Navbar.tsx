@@ -65,7 +65,7 @@ export default function Navbar() {
                 </button>
               ))}
               <a
-                href="/resume.pdf"
+                href="/Subrajit_Pandey_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary ml-4 text-xs lg:text-sm px-4 lg:px-6 py-2 lg:py-3"
@@ -102,7 +102,7 @@ export default function Navbar() {
               ))}
               <div className="px-3 py-2">
                 <a
-                  href="/resume.pdf"
+                  href="/Subrajit_Pandey_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary w-full justify-center text-sm"

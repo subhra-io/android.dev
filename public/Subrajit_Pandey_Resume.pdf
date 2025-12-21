@@ -1,0 +1,188 @@
+%PDF-1.4
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R]
+/Count 1
+>>
+endobj
+
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 4 0 R
+/Resources <<
+/Font <<
+/F1 5 0 R
+/F2 6 0 R
+>>
+>>
+>>
+endobj
+
+4 0 obj
+<<
+/Length 2500
+>>
+stream
+BT
+/F1 20 Tf
+50 750 Td
+(SUBRAJIT PANDEY) Tj
+0 -25 Td
+/F2 14 Tf
+(Android & Full-Stack Developer) Tj
+0 -30 Td
+/F2 10 Tf
+(Email: subhranikhil2001@gmail.com  |  Phone: +91 9337543151) Tj
+0 -15 Td
+(GitHub: https://github.com/subhra-io  |  Location: India) Tj
+0 -30 Td
+
+/F1 14 Tf
+(PROFESSIONAL EXPERIENCE) Tj
+0 -20 Td
+/F1 12 Tf
+(UNIQUE IDENTIFICATION AUTHORITY OF INDIA (UIDAI)) Tj
+0 -15 Td
+/F2 10 Tf
+(Software Developer - Mobile Applications | Oct 2024 – Present | Bengaluru, KA) Tj
+0 -12 Td
+(• Collaborated with Android team on projects utilizing MVVM architecture, LiveData, WorkManager, Coroutines) Tj
+0 -12 Td
+(• Developed cross-platform application using Kotlin Multiplatform (KMP) and Android Jetpack Compose) Tj
+0 -12 Td
+(• Integrated backend services: Redis, Kafka, load balancers for efficient data handling and real-time processing) Tj
+0 -12 Td
+(• Worked on scalable mobile solutions serving millions of users nationwide) Tj
+0 -20 Td
+
+/F1 12 Tf
+(NEXTLEARN TECHNOLOGIES) Tj
+0 -15 Td
+/F2 10 Tf
+(Android Developer Consultant | June 2024 – Oct 2024 | WFH, KA) Tj
+0 -12 Td
+(• Designed system architecture for Android application using MVVM architecture) Tj
+0 -12 Td
+(• Assisted in integrating application with MongoDB, ensuring scalability and efficient database interactions) Tj
+0 -20 Td
+
+/F1 12 Tf
+(UNIQUE IDENTIFICATION AUTHORITY OF INDIA (UIDAI)) Tj
+0 -15 Td
+/F2 10 Tf
+(Software Developer Intern - Android/iOS | May 2023 – May 2024 | Bengaluru, KA) Tj
+0 -12 Td
+(• Worked on Aadhaar face authentication (faceRD) and universal USB detection projects) Tj
+0 -12 Td
+(• Implemented MVVM, LiveData, WorkManager, Navigation, Shared Preferences, Coroutines) Tj
+0 -12 Td
+(• Experience with Fragments, Custom views, RecyclerView, Android SDK/NDK, CMake) Tj
+0 -25 Td
+
+/F1 14 Tf
+(KEY ACHIEVEMENTS) Tj
+0 -20 Td
+/F2 10 Tf
+(• AadhaarFaceRD App: 40M+ downloads on Google Play Store (Face authentication for government services)) Tj
+0 -12 Td
+(• Aadhaar Digital Identity App: 10M+ downloads (Next-generation digital identity platform)) Tj
+0 -12 Td
+(• International Innovation Award 2024 - Global Innovation Forum, Kuala Lumpur) Tj
+0 -12 Td
+(• Excellence in Mobile Development Award - UIDAI Internal Recognition Program) Tj
+0 -25 Td
+
+/F1 14 Tf
+(TECHNICAL SKILLS) Tj
+0 -20 Td
+/F2 10 Tf
+(Mobile Development: Kotlin, Java, Android SDK, Jetpack Compose, Kotlin Multiplatform (KMP)) Tj
+0 -12 Td
+(Architecture: MVVM, LiveData, WorkManager, Coroutines, Navigation Components) Tj
+0 -12 Td
+(Web Technologies: React, Next.js, JavaScript (ES6+), TypeScript, Node.js) Tj
+0 -12 Td
+(Databases: MongoDB, PostgreSQL, Redis) Tj
+0 -12 Td
+(Tools & Others: Git, CI/CD, System Design, REST APIs, Kafka, Load Balancers) Tj
+0 -25 Td
+
+/F1 14 Tf
+(PROJECTS) Tj
+0 -20 Td
+/F1 11 Tf
+(Chotta Credit - Credit Application for Gig Workers) Tj
+0 -12 Td
+/F2 10 Tf
+(• Technologies: Kotlin, Jetpack Compose, System Design, OAuth, Microservices) Tj
+0 -12 Td
+(• Developed credit management app focused on financial accessibility) Tj
+0 -15 Td
+
+/F1 11 Tf
+(Foodlee - Food Ordering Application) Tj
+0 -12 Td
+/F2 10 Tf
+(• Technologies: Kotlin Multiplatform (KMP), Jetpack Compose, Full-Stack Implementation) Tj
+0 -12 Td
+(• Cross-platform food ordering app with comprehensive system design) Tj
+0 -25 Td
+
+/F1 14 Tf
+(EDUCATION & CERTIFICATIONS) Tj
+0 -20 Td
+/F2 10 Tf
+(• Bachelor's Degree in Computer Science/Engineering) Tj
+0 -12 Td
+(• Android Development Certification) Tj
+0 -12 Td
+(• Kotlin Multiplatform Mobile Development) Tj
+
+ET
+endstream
+endobj
+
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica-Bold
+>>
+endobj
+
+6 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000274 00000 n 
+0000002826 00000 n 
+0000002890 00000 n 
+trailer
+<<
+/Size 7
+/Root 1 0 R
+>>
+startxref
+2949
+%%EOF

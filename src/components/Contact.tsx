@@ -2,12 +2,12 @@
 
 import { useState } from 'react'
 import { useInView } from 'react-intersection-observer'
-import { Mail, MapPin, Phone, Send, Github, Linkedin, Twitter, Instagram } from 'lucide-react'
+import { Mail, MapPin, Phone, Send, Github, Linkedin, Twitter, Instagram, MessageCircle } from 'lucide-react'
 
 const socialLinks = [
   {
     name: 'GitHub',
-    url: 'https://github.com/subrajitpandey',
+    url: 'https://github.com/subhra-io',
     icon: <Github className="w-5 h-5" />,
     color: 'hover:text-gray-400'
   },
@@ -74,6 +74,15 @@ export default function Contact() {
     }
   }
 
+  const handlePhoneCall = () => {
+    window.open('tel:+919337543151', '_self')
+  }
+
+  const handleWhatsApp = () => {
+    const message = encodeURIComponent('Hi Subrajit! I found your portfolio and would like to connect.')
+    window.open(`https://wa.me/919337543151?text=${message}`, '_blank')
+  }
+
   return (
     <section id="contact" className="py-20" ref={ref}>
       <div className="container-custom">
@@ -104,10 +113,10 @@ export default function Contact() {
                     <div>
                       <p className="text-navy-200 font-medium">Email</p>
                       <a
-                        href="mailto:subrajitpandey@example.com"
+                        href="mailto:subhranikhil2001@gmail.com"
                         className="text-navy-300 hover:text-green-400 transition-colors"
                       >
-                        subrajitpandey@example.com
+                        subhranikhil2001@gmail.com
                       </a>
                     </div>
                   </div>
@@ -127,8 +136,23 @@ export default function Contact() {
                       <Phone className="w-6 h-6 text-purple-400" />
                     </div>
                     <div>
-                      <p className="text-navy-200 font-medium">Response Time</p>
-                      <p className="text-navy-300">Usually within 24 hours</p>
+                      <p className="text-navy-200 font-medium">Phone</p>
+                      <div className="flex items-center space-x-2">
+                        <button
+                          onClick={handlePhoneCall}
+                          className="text-navy-300 hover:text-purple-400 transition-colors"
+                        >
+                          +91 9337543151
+                        </button>
+                        <span className="text-navy-500">|</span>
+                        <button
+                          onClick={handleWhatsApp}
+                          className="flex items-center space-x-1 text-green-500 hover:text-green-400 transition-colors"
+                        >
+                          <MessageCircle className="w-4 h-4" />
+                          <span className="text-sm">WhatsApp</span>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -163,12 +187,22 @@ export default function Contact() {
                 <p className="text-navy-300 text-sm mb-4">
                   For quick questions or just to say hello!
                 </p>
-                <a
-                  href="mailto:subrajitpandey@example.com"
-                  className="btn-primary"
-                >
-                  Say Hello
-                </a>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <a
+                    href="mailto:subhranikhil2001@gmail.com"
+                    className="btn-primary flex-1 justify-center"
+                  >
+                    <Mail className="w-4 h-4 mr-2" />
+                    Email Me
+                  </a>
+                  <button
+                    onClick={handleWhatsApp}
+                    className="btn-secondary flex-1 justify-center bg-green-600 hover:bg-green-500 border-green-600"
+                  >
+                    <MessageCircle className="w-4 h-4 mr-2" />
+                    WhatsApp
+                  </button>
+                </div>
               </div>
             </div>
 

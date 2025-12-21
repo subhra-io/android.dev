@@ -16,6 +16,7 @@ import Blog from '@/components/Blog'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 import LoadingScreen from '@/components/LoadingScreen'
+import VisitorAnalytics from '@/components/VisitorAnalytics'
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
@@ -51,6 +52,9 @@ export default function Home() {
         <Contact />
         <Footer />
       </div>
+      
+      {/* Visitor Analytics */}
+      <VisitorAnalytics />
       
       {/* Background decorations */}
       <div className="fixed inset-0 -z-10 overflow-hidden">
