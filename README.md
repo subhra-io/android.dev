@@ -77,7 +77,7 @@ src/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/subrajitpandey/portfolio.git
+   git clone https://github.com/subhra-io/portfolio.git
    cd portfolio
    ```
 
@@ -253,7 +253,7 @@ If you have any questions or need help setting up the portfolio:
 
 - 📧 Email: subrajitpandey@example.com
 - 💼 LinkedIn: [Subrajit Pandey](https://www.linkedin.com/in/subrajit-pandey-6a7950201)
-- 🐙 GitHub: [@subrajitpandey](https://github.com/subrajitpandey)
+- 🐙 GitHub: [@subhra-io](https://github.com/subhra-io)
 
 ---
 
