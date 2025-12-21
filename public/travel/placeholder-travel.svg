@@ -1,0 +1,19 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#112240"/>
+  <rect x="50" y="50" width="700" height="500" rx="12" fill="#0a192f" stroke="#233554" stroke-width="2"/>
+  
+  <!-- Mountain silhouette -->
+  <path d="M100 400 L200 250 L300 320 L400 200 L500 280 L600 180 L700 300 L700 450 L100 450 Z" fill="#64ffda" opacity="0.1"/>
+  
+  <!-- Sun/Moon -->
+  <circle cx="650" cy="150" r="40" fill="#64ffda" opacity="0.3"/>
+  
+  <!-- Camera icon -->
+  <rect x="360" y="280" width="80" height="60" rx="8" fill="#64ffda" opacity="0.2"/>
+  <circle cx="400" cy="310" r="15" fill="#64ffda" opacity="0.4"/>
+  <rect x="385" y="265" width="30" height="10" rx="5" fill="#64ffda" opacity="0.3"/>
+  
+  <!-- Text -->
+  <text x="400" y="380" text-anchor="middle" fill="#64ffda" font-family="monospace" font-size="18">Travel Memory</text>
+  <text x="400" y="410" text-anchor="middle" fill="#8892b0" font-family="monospace" font-size="14">Adventure Awaits</text>
+</svg>
