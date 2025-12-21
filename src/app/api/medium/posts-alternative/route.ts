@@ -48,16 +48,16 @@ async function fetchMediumPostsAlternative() {
             thumbnail = imgMatch ? imgMatch[1] : null
           }
           
-          // Enhanced fallback images
+          // Enhanced fallback images - Android & DSA themed
           const fallbackImages = [
-            'https://miro.medium.com/v2/resize:fit:1400/1*y6C4nSvy2Woe0m7bWEn4BA.png',
-            'https://miro.medium.com/v2/resize:fit:1400/1*BC1nBKrqo2xXgZ8SWZjKQA.png',
-            'https://miro.medium.com/v2/resize:fit:1400/1*8tpiLHpPQrdugVoXuDoZOg.png',
-            'https://miro.medium.com/v2/resize:fit:1400/1*J3G3akaMpUOLegw0p0qthA.png',
-            'https://miro.medium.com/v2/resize:fit:1400/1*QY8swdGtmqK8pnbXzgm6Mw.png',
-            'https://miro.medium.com/v2/resize:fit:1400/1*FVaGW7GsMdUAeRtHrs7Qbg.png',
-            'https://miro.medium.com/v2/resize:fit:1400/1*0hqOaABQ7XGPT2OET_zMSg.png',
-            'https://miro.medium.com/v2/resize:fit:1400/1*5-aoK8IBmXve5whBQM90GA.png'
+            'https://miro.medium.com/v2/resize:fit:1400/1*xORnV_XiUCVuxn3BmjZeyw.png', // Android Development
+            'https://miro.medium.com/v2/resize:fit:1400/1*sGQlNhL_rGqU8AcamTN0-A.png', // Kotlin Programming
+            'https://miro.medium.com/v2/resize:fit:1400/1*7lbP0_0jgKW6_fQQWfsZuA.png', // Data Structures
+            'https://miro.medium.com/v2/resize:fit:1400/1*QxPmlq24YaAOcvwZ5d5L8w.png', // Algorithms
+            'https://miro.medium.com/v2/resize:fit:1400/1*8XtAc5AZxlRrBlsJBKzhrg.png', // Android Architecture
+            'https://miro.medium.com/v2/resize:fit:1400/1*5whyFjkFaGRea8wBedTHdQ.png', // Mobile Development
+            'https://miro.medium.com/v2/resize:fit:1400/1*0hqOaABQ7XGPT2OET_zMSg.png', // Programming Concepts
+            'https://miro.medium.com/v2/resize:fit:1400/1*dJxjJmx50cq34RiF40Twsg.png'  // Software Engineering
           ]
           
           if (!thumbnail) {
@@ -112,7 +112,7 @@ async function fetchMediumPostsAlternative() {
         reading_time: 12,
         claps: 567,
         responses: 34,
-        thumbnail: 'https://miro.medium.com/v2/resize:fit:1400/1*y6C4nSvy2Woe0m7bWEn4BA.png',
+        thumbnail: 'https://miro.medium.com/v2/resize:fit:1400/1*xORnV_XiUCVuxn3BmjZeyw.png', // Android Development
         tags: ['Android', 'Government Tech', 'Scale', 'Architecture']
       },
       {
@@ -124,7 +124,7 @@ async function fetchMediumPostsAlternative() {
         reading_time: 15,
         claps: 892,
         responses: 67,
-        thumbnail: 'https://miro.medium.com/v2/resize:fit:1400/1*BC1nBKrqo2xXgZ8SWZjKQA.png',
+        thumbnail: 'https://miro.medium.com/v2/resize:fit:1400/1*sGQlNhL_rGqU8AcamTN0-A.png', // Kotlin Programming
         tags: ['Android', 'Success Story', 'Biometrics', 'Scale']
       },
       {
@@ -136,44 +136,44 @@ async function fetchMediumPostsAlternative() {
         reading_time: 10,
         claps: 445,
         responses: 28,
-        thumbnail: 'https://miro.medium.com/v2/resize:fit:1400/1*8tpiLHpPQrdugVoXuDoZOg.png',
+        thumbnail: 'https://miro.medium.com/v2/resize:fit:1400/1*7lbP0_0jgKW6_fQQWfsZuA.png', // Data Structures
         tags: ['Kotlin Multiplatform', 'Cross-Platform', 'Mobile', 'Production']
       },
       {
         id: 'featured-4',
-        title: 'MVVM Architecture in Android: Beyond the Basics',
-        subtitle: 'Advanced MVVM patterns for complex Android applications. Repository pattern, dependency injection, testing strategies, and handling complex UI states with LiveData and ViewModels...',
-        url: 'https://medium.com/@subhrajeetpandey2001/advanced-mvvm-android',
+        title: 'Data Structures Every Android Developer Should Master',
+        subtitle: 'Essential data structures for mobile development. Learn how to choose the right data structure for your Android app, optimize memory usage, and improve performance with practical examples...',
+        url: 'https://medium.com/@subhrajeetpandey2001/essential-data-structures-android',
         published_at: new Date(Date.now() - 25 * 24 * 60 * 60 * 1000).toISOString(),
         reading_time: 13,
         claps: 623,
         responses: 41,
-        thumbnail: 'https://miro.medium.com/v2/resize:fit:1400/1*J3G3akaMpUOLegw0p0qthA.png',
-        tags: ['Android', 'MVVM', 'Architecture', 'Best Practices']
+        thumbnail: 'https://miro.medium.com/v2/resize:fit:1400/1*7lbP0_0jgKW6_fQQWfsZuA.png', // Data Structures
+        tags: ['Data Structures', 'Android', 'Performance', 'Best Practices']
       },
       {
         id: 'featured-5',
-        title: 'My Transition from Web to Mobile Development',
-        subtitle: 'The journey from React and web technologies to Android development. Comparing paradigms, transferable skills, and what I wish I knew when starting mobile development...',
-        url: 'https://medium.com/@subhrajeetpandey2001/web-to-mobile-transition',
+        title: 'Algorithm Design Patterns for Mobile Applications',
+        subtitle: 'Common algorithm patterns in mobile development. From sorting and searching to graph algorithms and dynamic programming, with real-world Android implementation examples...',
+        url: 'https://medium.com/@subhrajeetpandey2001/algorithm-patterns-mobile',
         published_at: new Date(Date.now() - 32 * 24 * 60 * 60 * 1000).toISOString(),
-        reading_time: 8,
-        claps: 378,
-        responses: 22,
-        thumbnail: 'https://miro.medium.com/v2/resize:fit:1400/1*QY8swdGtmqK8pnbXzgm6Mw.png',
-        tags: ['Career', 'Web Development', 'Mobile', 'Transition']
-      },
-      {
-        id: 'featured-6',
-        title: 'Performance Optimization for High-Traffic Android Apps',
-        subtitle: 'Techniques for optimizing Android applications that handle millions of users. Memory management, network optimization, UI performance, and monitoring strategies for production apps...',
-        url: 'https://medium.com/@subhrajeetpandey2001/android-performance-optimization',
-        published_at: new Date(Date.now() - 39 * 24 * 60 * 60 * 1000).toISOString(),
         reading_time: 14,
         claps: 756,
         responses: 53,
-        thumbnail: 'https://miro.medium.com/v2/resize:fit:1400/1*FVaGW7GsMdUAeRtHrs7Qbg.png',
-        tags: ['Android', 'Performance', 'Optimization', 'Production']
+        thumbnail: 'https://miro.medium.com/v2/resize:fit:1400/1*QxPmlq24YaAOcvwZ5d5L8w.png', // Algorithms
+        tags: ['Algorithms', 'Design Patterns', 'Mobile', 'Android']
+      },
+      {
+        id: 'featured-6',
+        title: 'Optimizing Android Apps with Advanced Data Structures',
+        subtitle: 'Performance optimization using efficient data structures and algorithms. Memory management, caching strategies, and real-world examples from government-scale applications...',
+        url: 'https://medium.com/@subhrajeetpandey2001/optimizing-android-data-structures',
+        published_at: new Date(Date.now() - 39 * 24 * 60 * 60 * 1000).toISOString(),
+        reading_time: 16,
+        claps: 892,
+        responses: 67,
+        thumbnail: 'https://miro.medium.com/v2/resize:fit:1400/1*0hqOaABQ7XGPT2OET_zMSg.png', // Programming Concepts
+        tags: ['Android', 'Performance', 'Data Structures', 'Optimization']
       }
     ]
   }

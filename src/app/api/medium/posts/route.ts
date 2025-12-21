@@ -33,14 +33,16 @@ async function fetchMediumPosts() {
         thumbnail = imgMatch ? imgMatch[1] : null
       }
       
-      // Fallback images for articles without thumbnails
+      // Fallback images for articles without thumbnails - Android & DSA themed
       const fallbackImages = [
-        'https://miro.medium.com/v2/resize:fit:1400/1*y6C4nSvy2Woe0m7bWEn4BA.png',
-        'https://miro.medium.com/v2/resize:fit:1400/1*BC1nBKrqo2xXgZ8SWZjKQA.png',
-        'https://miro.medium.com/v2/resize:fit:1400/1*8tpiLHpPQrdugVoXuDoZOg.png',
-        'https://miro.medium.com/v2/resize:fit:1400/1*J3G3akaMpUOLegw0p0qthA.png',
-        'https://miro.medium.com/v2/resize:fit:1400/1*QY8swdGtmqK8pnbXzgm6Mw.png',
-        'https://miro.medium.com/v2/resize:fit:1400/1*FVaGW7GsMdUAeRtHrs7Qbg.png'
+        'https://miro.medium.com/v2/resize:fit:1400/1*xORnV_XiUCVuxn3BmjZeyw.png', // Android Development
+        'https://miro.medium.com/v2/resize:fit:1400/1*sGQlNhL_rGqU8AcamTN0-A.png', // Kotlin Programming
+        'https://miro.medium.com/v2/resize:fit:1400/1*7lbP0_0jgKW6_fQQWfsZuA.png', // Data Structures
+        'https://miro.medium.com/v2/resize:fit:1400/1*QxPmlq24YaAOcvwZ5d5L8w.png', // Algorithms
+        'https://miro.medium.com/v2/resize:fit:1400/1*8XtAc5AZxlRrBlsJBKzhrg.png', // Android Architecture
+        'https://miro.medium.com/v2/resize:fit:1400/1*5whyFjkFaGRea8wBedTHdQ.png', // Mobile Development
+        'https://miro.medium.com/v2/resize:fit:1400/1*0hqOaABQ7XGPT2OET_zMSg.png', // Programming Concepts
+        'https://miro.medium.com/v2/resize:fit:1400/1*dJxjJmx50cq34RiF40Twsg.png'  // Software Engineering
       ]
       
       if (!thumbnail) {
@@ -83,7 +85,7 @@ async function fetchMediumPosts() {
         reading_time: 8,
         claps: 234,
         responses: 12,
-        thumbnail: 'https://miro.medium.com/v2/resize:fit:1400/1*y6C4nSvy2Woe0m7bWEn4BA.png',
+        thumbnail: 'https://miro.medium.com/v2/resize:fit:1400/1*xORnV_XiUCVuxn3BmjZeyw.png', // Android Development
         tags: ['Android', 'Kotlin', 'Mobile Development', 'MVVM']
       },
       {
@@ -95,7 +97,7 @@ async function fetchMediumPosts() {
         reading_time: 12,
         claps: 456,
         responses: 23,
-        thumbnail: 'https://miro.medium.com/v2/resize:fit:1400/1*BC1nBKrqo2xXgZ8SWZjKQA.png',
+        thumbnail: 'https://miro.medium.com/v2/resize:fit:1400/1*sGQlNhL_rGqU8AcamTN0-A.png', // Kotlin Programming
         tags: ['Career', 'Government Tech', 'Android', 'Experience']
       },
       {
@@ -107,32 +109,32 @@ async function fetchMediumPosts() {
         reading_time: 10,
         claps: 189,
         responses: 8,
-        thumbnail: 'https://miro.medium.com/v2/resize:fit:1400/1*8tpiLHpPQrdugVoXuDoZOg.png',
+        thumbnail: 'https://miro.medium.com/v2/resize:fit:1400/1*7lbP0_0jgKW6_fQQWfsZuA.png', // Data Structures
         tags: ['Kotlin Multiplatform', 'Cross-Platform', 'Mobile', 'KMP']
       },
       {
         id: 'mock-4',
-        title: 'Building High-Performance Android Apps: Tips and Tricks',
-        subtitle: 'Performance optimization techniques for Android applications, memory management, UI rendering, and tools for profiling and debugging...',
-        url: 'https://medium.com/@subhrajeetpandey2001/android-performance-optimization',
+        title: 'Mastering Data Structures and Algorithms for Android Development',
+        subtitle: 'Essential DSA concepts every Android developer should know. From optimizing RecyclerView performance to implementing efficient search algorithms in mobile apps...',
+        url: 'https://medium.com/@subhrajeetpandey2001/dsa-for-android-developers',
         published_at: new Date(Date.now() - 28 * 24 * 60 * 60 * 1000).toISOString(),
         reading_time: 15,
         claps: 312,
         responses: 18,
-        thumbnail: 'https://miro.medium.com/v2/resize:fit:1400/1*J3G3akaMpUOLegw0p0qthA.png',
-        tags: ['Android', 'Performance', 'Optimization', 'Mobile']
+        thumbnail: 'https://miro.medium.com/v2/resize:fit:1400/1*7lbP0_0jgKW6_fQQWfsZuA.png', // Data Structures
+        tags: ['Data Structures', 'Algorithms', 'Android', 'Performance']
       },
       {
         id: 'mock-5',
-        title: 'From React to Android: A Web Developer\'s Mobile Journey',
-        subtitle: 'Transitioning from web development to mobile app development, comparing React and Android development patterns, and lessons learned...',
-        url: 'https://medium.com/@subhrajeetpandey2001/react-to-android-journey',
+        title: 'Algorithm Optimization in Mobile Applications',
+        subtitle: 'Practical approaches to implementing efficient algorithms in resource-constrained mobile environments. Memory management, time complexity, and real-world examples...',
+        url: 'https://medium.com/@subhrajeetpandey2001/algorithm-optimization-mobile',
         published_at: new Date(Date.now() - 35 * 24 * 60 * 60 * 1000).toISOString(),
         reading_time: 9,
         claps: 278,
         responses: 15,
-        thumbnail: 'https://miro.medium.com/v2/resize:fit:1400/1*QY8swdGtmqK8pnbXzgm6Mw.png',
-        tags: ['React', 'Android', 'Career Transition', 'Web Development']
+        thumbnail: 'https://miro.medium.com/v2/resize:fit:1400/1*QxPmlq24YaAOcvwZ5d5L8w.png', // Algorithms
+        tags: ['Algorithms', 'Mobile', 'Optimization', 'Performance']
       },
       {
         id: 'mock-6',
@@ -143,7 +145,7 @@ async function fetchMediumPosts() {
         reading_time: 11,
         claps: 445,
         responses: 27,
-        thumbnail: 'https://miro.medium.com/v2/resize:fit:1400/1*FVaGW7GsMdUAeRtHrs7Qbg.png',
+        thumbnail: 'https://miro.medium.com/v2/resize:fit:1400/1*5whyFjkFaGRea8wBedTHdQ.png', // Mobile Development
         tags: ['Government Tech', 'Scale', 'Digital Infrastructure', 'Impact']
       }
     ]

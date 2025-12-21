@@ -33,9 +33,9 @@ function BlogPost({ post, index }: BlogPostProps) {
             alt={post.title}
             className="w-full h-40 sm:h-48 object-cover group-hover:scale-105 transition-transform duration-300"
             onError={(e) => {
-              // Fallback to a default image if the thumbnail fails to load
+              // Fallback to Android/DSA themed image if the thumbnail fails to load
               const target = e.target as HTMLImageElement
-              target.src = 'https://miro.medium.com/v2/resize:fit:1400/1*y6C4nSvy2Woe0m7bWEn4BA.png'
+              target.src = 'https://miro.medium.com/v2/resize:fit:1400/1*xORnV_XiUCVuxn3BmjZeyw.png'
             }}
           />
         </div>
