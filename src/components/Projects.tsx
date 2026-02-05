@@ -72,10 +72,34 @@ const projects = [
     category: 'mobile',
     stars: 0,
     forks: 0
+  },
+  {
+    id: 6,
+    title: 'Android.dev Portfolio',
+    description: 'Modern portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features responsive design, travel gallery, and real-time analytics.',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'React', 'Vercel'],
+    githubUrl: 'https://github.com/subhra-io/android.dev',
+    liveUrl: 'https://android-dev-subhra.vercel.app',
+    featured: false,
+    category: 'web',
+    stars: 0,
+    forks: 0
+  },
+  {
+    id: 7,
+    title: 'Vercos',
+    description: 'Version control system implementation with Git-like functionality for learning distributed version control concepts.',
+    technologies: ['JavaScript', 'Node.js', 'File System', 'Version Control'],
+    githubUrl: 'https://github.com/subhra-io/Vercos',
+    liveUrl: null,
+    featured: false,
+    category: 'api',
+    stars: 0,
+    forks: 0
   }
 ]
 
-const categories = ['all', 'mobile', 'api']
+const categories = ['all', 'mobile', 'web', 'api']
 
 interface ProjectCardProps {
   project: typeof projects[0]

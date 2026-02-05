@@ -1,7 +1,7 @@
 'use client'
 
 import { useInView } from 'react-intersection-observer'
-import { Trophy, Award, Smartphone, Star, Download, ExternalLink, Calendar, Users } from 'lucide-react'
+import { Trophy, Award, Smartphone, Star, Download, ExternalLink, Calendar, Users, Linkedin, Heart, MessageCircle, Share } from 'lucide-react'
 
 interface AppAchievement {
   id: string
@@ -26,6 +26,21 @@ interface AwardAchievement {
   certificate?: string | null
   position: string
   teamSize?: number
+}
+
+interface SocialAchievement {
+  id: string
+  platform: 'linkedin' | 'twitter' | 'medium'
+  title: string
+  description: string
+  url: string
+  date: string
+  engagement: {
+    likes: number
+    comments: number
+    shares: number
+  }
+  type: 'post' | 'article' | 'achievement'
 }
 
 const publishedApps: AppAchievement[] = [
@@ -88,6 +103,23 @@ const awards: AwardAchievement[] = [
     certificate: null,
     position: 'Outstanding Performer',
     teamSize: 4
+  }
+]
+
+const socialAchievements: SocialAchievement[] = [
+  {
+    id: '1',
+    platform: 'linkedin',
+    title: 'UIDAI Aadhaar App Development Journey',
+    description: 'Shared insights about developing government-scale applications at UIDAI, working on Aadhaar ecosystem, and the impact of digital identity solutions serving millions of Indians.',
+    url: 'https://www.linkedin.com/posts/subrajit-pandey-6a7950201_uidai-aadhaar-aadhaarapp-activity-7424023904895090688-_n9j',
+    date: 'January 2025',
+    engagement: {
+      likes: 45,
+      comments: 12,
+      shares: 8
+    },
+    type: 'post'
   }
 ]
 
@@ -215,6 +247,80 @@ export default function Achievements() {
                           {feature}
                         </span>
                       ))}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Awards & Recognition */}
+          <div className="mb-12 sm:mb-16">
+            <h3 className="text-xl sm:text-2xl font-semibold text-navy-100 mb-6 sm:mb-8 flex items-center">
+              <Linkedin className="w-5 h-5 sm:w-6 sm:h-6 mr-2 text-blue-400 flex-shrink-0" />
+              Featured Posts & Social Impact
+            </h3>
+            <div className="grid grid-cols-1 gap-4 sm:gap-6">
+              {socialAchievements.map((social, index) => (
+                <div
+                  key={social.id}
+                  className={`bg-gradient-to-r from-blue-400/10 to-cyan-400/10 rounded-lg p-4 sm:p-6 border border-blue-400/20 hover:border-blue-400/50 transition-all duration-500 hover:transform hover:-translate-y-2 ${
+                    inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                  }`}
+                  style={{ transitionDelay: `${index * 150}ms` }}
+                >
+                  <div className="flex items-start space-x-3 sm:space-x-4 mb-3 sm:mb-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-lg flex items-center justify-center">
+                        <Linkedin className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+                      </div>
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-start justify-between mb-2">
+                        <h4 className="text-base sm:text-lg font-semibold text-navy-100 pr-2">{social.title}</h4>
+                        <a
+                          href={social.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-400 hover:text-blue-300 transition-colors flex-shrink-0"
+                          title="View Post"
+                        >
+                          <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5" />
+                        </a>
+                      </div>
+                      <div className="flex items-center space-x-2 mb-2">
+                        <span className="inline-block px-2 py-1 bg-blue-400/20 text-blue-400 rounded text-xs font-semibold capitalize">
+                          {social.platform}
+                        </span>
+                        <span className="inline-block px-2 py-1 bg-green-400/20 text-green-400 rounded text-xs font-semibold capitalize">
+                          {social.type}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p className="text-navy-300 text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed">
+                    {social.description}
+                  </p>
+
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center space-x-4 text-xs sm:text-sm text-navy-400">
+                      <div className="flex items-center">
+                        <Heart className="w-3 h-3 sm:w-4 sm:h-4 mr-1 text-red-400 flex-shrink-0" />
+                        <span>{social.engagement.likes}</span>
+                      </div>
+                      <div className="flex items-center">
+                        <MessageCircle className="w-3 h-3 sm:w-4 sm:h-4 mr-1 text-blue-400 flex-shrink-0" />
+                        <span>{social.engagement.comments}</span>
+                      </div>
+                      <div className="flex items-center">
+                        <Share className="w-3 h-3 sm:w-4 sm:h-4 mr-1 text-green-400 flex-shrink-0" />
+                        <span>{social.engagement.shares}</span>
+                      </div>
+                    </div>
+                    <div className="flex items-center text-navy-400 text-xs sm:text-sm">
+                      <Calendar className="w-3 h-3 sm:w-4 sm:h-4 mr-1 text-blue-400 flex-shrink-0" />
+                      <span>{social.date}</span>
                     </div>
                   </div>
                 </div>
